@@ -4,17 +4,125 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Terms &amp; Conditions</title>
+  <title>Privacy Policy</title>
   <style>
     body {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      padding: 1em;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #4a7aaa;
+      line-height: 1.6;
+    }
+
+    /* Top banner */
+    .navbar {
+      background-color: #b8ebeb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 40px;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+    }
+
+    .navbar .logo span {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .navbar nav a {
+      color: #7177eb;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+    }
+
+    .navbar nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Content */
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    h1,
+    h2,
+    h3,
+    strong {
+      color: #71c1ef;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 22px;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background-color: #0fbcf1;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    p {
+      color: #555;
+      margin: 15px 0;
+    }
+
+    ul {
+      margin: 15px 0 15px 20px;
+    }
+
+    hr {
+      margin: 40px 0;
+      border: none;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 
 <body>
-  <strong>Terms &amp; Conditions</strong><br>
+  <!-- Top Nav -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/icon.png" alt="logo">
+      <span>MyPawPal</span>
+    </div>
+    <nav>
+      <a href="mypawpal-about.html">Home</a>
+      <a href="mypawpal-privacy.html">Privacy Policy</a>
+      <a href="mypawpal-terms.html">Terms of Service</a>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <div class="container">
+  <h1>Terms &amp; Conditions</h1><br>
   <p>These terms and conditions apply to the MyPawPal app (hereby referred to as "Application") for mobile devices that
     was created by Bingqing Wei (hereby referred to as "Service Provider") as a Commercial service.</p><br>
   <p>Upon downloading or utilizing the Application, you are automatically agreeing to the following terms. It is
@@ -60,14 +168,15 @@
     cease providing the application and may terminate its use at any time without providing termination notice to you.
     Unless they inform you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms
     will end; (b) you must cease using the application, and (if necessary) delete it from your device.</p>
-  <br><strong>Changes to These Terms and Conditions</strong>
+  <br><h2>Changes to These Terms and Conditions</h2>
   <p>The Service Provider may periodically update their Terms and Conditions. Therefore, you are advised to review this
     page regularly for any changes. The Service Provider will notify you of any changes by posting the new Terms and
     Conditions on this page.</p><br>
-  <p>These terms and conditions are effective as of 2025-07-27</p><br><strong>Contact Us</strong>
+  <p>These terms and conditions are effective as of 2025-07-27</p><br><h2>Contact Us</h2>
   <p>If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the
     Service Provider at pawurchart.feedbacks@gmail.com.</p>
   <hr>
+  </div>
 </body>
 
 </html>
