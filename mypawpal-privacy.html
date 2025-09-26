@@ -95,13 +95,49 @@
 
 <body class="antialiased">
 
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="glass-card flex items-center justify-between px-6 py-3">
+                <!-- Logo -->
+                <a href="mypawpal-about.html" class="flex items-center space-x-2">
+                    <img src="./images/icon.png" alt="MyPawPal Logo" class="h-8 w-8">
+                    <span class="text-xl font-bold text-slate-800">MyPawPal</span>
+                </a>
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="mypawpal-about.html" class="text-slate-600 hover:text-cyan-500 transition-colors">Home</a>
+                    <a href="https://apps.apple.com/us/app/mypawpal-pet-diary-with-ai-vet/id6746771311"
+                        class="bg-cyan-500 text-white font-bold py-2 px-4 rounded-full text-sm hover:bg-cyan-600 transition-transform transform hover:scale-105">Download</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-800">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 glass-card p-4">
+                <a href="mypawpal-about.html"
+                    class="block py-2 px-4 text-sm text-slate-600 hover:bg-white/50 rounded">Home</a>
+                <a href="https://apps.apple.com/us/app/mypawpal-pet-diary-with-ai-vet/id6746771311"
+                    class="block py-2 px-4 text-sm text-slate-600 hover:bg-white/50 rounded">Download</a>
+            </div>
+        </nav>
+    </header>
+
     <!-- Background Gradient Shapes -->
     <div class="background-shapes">
         <div class="shape shape1"></div>
         <div class="shape shape2"></div>
     </div>
 
-    <div class="container mx-auto px-6 py-12 md:py-20">
+    <div class="container mx-auto px-6 pt-32 pb-12 md:pt-40 md:pb-20">
 
         <!-- Header -->
         <header class="text-center mb-12">
@@ -279,6 +315,14 @@
         </div>
     </footer>
 
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>

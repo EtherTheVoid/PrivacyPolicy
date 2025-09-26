@@ -2,322 +2,435 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credits - MyPawPal</title>
-    <link rel="icon" href="./images/icon.png" type="image/png">
-    <link rel="apple-touch-icon" href="./images/icon.png" type="image/png">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <style>
-        /* Custom styles to achieve the glass UI effect and overall aesthetic */
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
-            color: #1e293b;
-            /* slate-800 */
-            overflow-x: hidden;
-        }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Credits - MyPawPal</title>
+        <link rel="icon" href="./images/icon.png" type="image/png">
+        <link rel="apple-touch-icon" href="./images/icon.png" type="image/png">
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Google Fonts: Inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+                rel="stylesheet">
+        <style>
+                /* Custom styles to achieve the glass UI effect and overall aesthetic */
+                body {
+                        font-family: 'Inter', sans-serif;
+                        background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+                        color: #1e293b;
+                        /* slate-800 */
+                        overflow-x: hidden;
+                }
 
-        /* Background Gradient Shapes */
-        .background-shapes {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
+                /* Background Gradient Shapes */
+                .background-shapes {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                        overflow: hidden;
+                }
 
-        .shape {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(120px);
-        }
+                .shape {
+                        position: absolute;
+                        border-radius: 50%;
+                        filter: blur(120px);
+                }
 
-        .shape1 {
-            width: 400px;
-            height: 400px;
-            background-color: rgba(0, 220, 255, 0.3);
-            /* Cyan */
-            top: -100px;
-            left: -100px;
-            animation: moveShape1 20s infinite alternate;
-        }
+                .shape1 {
+                        width: 400px;
+                        height: 400px;
+                        background-color: rgba(0, 220, 255, 0.3);
+                        /* Cyan */
+                        top: -100px;
+                        left: -100px;
+                        animation: moveShape1 20s infinite alternate;
+                }
 
-        .shape2 {
-            width: 500px;
-            height: 500px;
-            background-color: rgba(135, 206, 250, 0.4);
-            /* Light Blue */
-            bottom: -150px;
-            right: -150px;
-            animation: moveShape2 25s infinite alternate;
-        }
+                .shape2 {
+                        width: 500px;
+                        height: 500px;
+                        background-color: rgba(135, 206, 250, 0.4);
+                        /* Light Blue */
+                        bottom: -150px;
+                        right: -150px;
+                        animation: moveShape2 25s infinite alternate;
+                }
 
-        /* Glassmorphism Card Style */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-radius: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
-        }
+                /* Glassmorphism Card Style */
+                .glass-card {
+                        background: rgba(255, 255, 255, 0.6);
+                        backdrop-filter: blur(20px);
+                        -webkit-backdrop-filter: blur(20px);
+                        border-radius: 2rem;
+                        border: 1px solid rgba(255, 255, 255, 0.2);
+                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+                }
 
-        /* Keyframe animations for the background shapes */
-        @keyframes moveShape1 {
-            from {
-                transform: translate(0, 0) rotate(0deg);
-            }
+                /* Keyframe animations for the background shapes */
+                @keyframes moveShape1 {
+                        from {
+                                transform: translate(0, 0) rotate(0deg);
+                        }
 
-            to {
-                transform: translate(100px, 150px) rotate(90deg);
-            }
-        }
+                        to {
+                                transform: translate(100px, 150px) rotate(90deg);
+                        }
+                }
 
-        @keyframes moveShape2 {
-            from {
-                transform: translate(0, 0) rotate(0deg);
-            }
+                @keyframes moveShape2 {
+                        from {
+                                transform: translate(0, 0) rotate(0deg);
+                        }
 
-            to {
-                transform: translate(-150px, -100px) rotate(-90deg);
-            }
-        }
-    </style>
+                        to {
+                                transform: translate(-150px, -100px) rotate(-90deg);
+                        }
+                }
+        </style>
 </head>
 
 <body class="antialiased">
 
-    <!-- Background Gradient Shapes -->
-    <div class="background-shapes">
-        <div class="shape shape1"></div>
-        <div class="shape shape2"></div>
-    </div>
-
-    <div class="container mx-auto px-6 py-12 md:py-20">
-
-        <!-- Header -->
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight">
-                Credits & Attributions
-            </h1>
-            <p class="text-lg text-slate-600 mt-2">MyPawPal is made possible by these amazing resources.</p>
+        <!-- Header & Navigation -->
+        <header class="fixed top-0 left-0 right-0 z-50">
+                <nav class="container mx-auto px-6 py-4">
+                        <div class="glass-card flex items-center justify-between px-6 py-3">
+                                <!-- Logo -->
+                                <a href="mypawpal-about.html" class="flex items-center space-x-2">
+                                        <img src="./images/icon.png" alt="MyPawPal Logo" class="h-8 w-8">
+                                        <span class="text-xl font-bold text-slate-800">MyPawPal</span>
+                                </a>
+                                <!-- Navigation Links -->
+                                <div class="hidden md:flex items-center space-x-8">
+                                        <a href="mypawpal-about.html"
+                                                class="text-slate-600 hover:text-cyan-500 transition-colors">Home</a>
+                                        <a href="https://apps.apple.com/us/app/mypawpal-pet-diary-with-ai-vet/id6746771311"
+                                                class="bg-cyan-500 text-white font-bold py-2 px-4 rounded-full text-sm hover:bg-cyan-600 transition-transform transform hover:scale-105">Download</a>
+                                </div>
+                                <!-- Mobile Menu Button -->
+                                <div class="md:hidden">
+                                        <button id="mobile-menu-button" class="text-slate-800">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                                </svg>
+                                        </button>
+                                </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div id="mobile-menu" class="hidden md:hidden mt-4 glass-card p-4">
+                                <a href="mypawpal-about.html"
+                                        class="block py-2 px-4 text-sm text-slate-600 hover:bg-white/50 rounded">Home</a>
+                                <a href="https://apps.apple.com/us/app/mypawpal-pet-diary-with-ai-vet/id6746771311"
+                                        class="block py-2 px-4 text-sm text-slate-600 hover:bg-white/50 rounded">Download</a>
+                        </div>
+                </nav>
         </header>
 
-        <!-- Credits Content -->
-        <main>
-            <div class="glass-card max-w-4xl mx-auto p-8 md:p-12">
-                <div class="space-y-4 text-slate-700">
-                    <p>The MyPawPal software includes the use of the following resources:</p>
-                    <ul class="list-disc list-inside space-y-3">
-                        <p><a href="https://www.flaticon.com/free-icons/notification"
-                                title="notification icons">Notification icons created
-                                by Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/pet-bottle" title="pet bottle icons">Pet bottle
-                                icons created by
-                                Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/view-list" title="view list icons">View list
-                                icons created by
-                                JessiGue - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/dog" title="dog icons">Dog icons created by
-                                Freepik - Flaticon</a>
-                        </p>
-                        <p><a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by
-                                Freepik - Flaticon</a>
-                        </p>
-                        <p><a href="https://www.flaticon.com/free-icons/bird" title="bird icons">Bird icons created by
-                                Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/rabbit" title="rabbit icons">Rabbit icons
-                                created by dDara -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/hamster" title="hamster icons">Hamster icons
-                                created by justicon -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/cute" title="cute icons">Cute icons created by
-                                Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by
-                                Freepik - Flaticon</a>
-                        </p>
-                        <p><a href="https://www.flaticon.com/free-icons/hamster" title="hamster icons">Hamster icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/weight" title="weight icons">Weight icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/glass-of-water"
-                                title="glass of water icons">Glass of water icons
-                                created by Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/activity" title="activity icons">Activity icons
-                                created by
-                                redempticon - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/pet-food" title="pet-food icons">Pet-food icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/settings" title="settings icons">Settings icons
-                                created by srip -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/calendar" title="calendar icons">Calendar icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/turtle" title="turtle icons">Turtle icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/ocean" title="ocean icons">Ocean icons created
-                                by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/diary" title="diary icons">Diary icons created
-                                by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/fauna" title="fauna icons">Fauna icons created
-                                by Paul J. -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/horse" title="horse icons">Horse icons created
-                                by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/guinea-pig" title="guinea pig icons">Guinea pig
-                                icons created by
-                                Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/cocaine" title="cocaine icons">Cocaine icons
-                                created by Good Ware -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/leaves" title="leaves icons">Leaves icons
-                                created by cahiwak -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/flower" title="flower icons">Flower icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/flower" title="flower icons">Flower icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/leaves" title="leaves icons">Leaves icons
-                                created by manshagraphics
-                                - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/leaf" title="leaf icons">Leaf icons created by
-                                Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/flower" title="flower icons">Flower icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/flower" title="flower icons">Flower icons
-                                created by jocularityart -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/flower" title="flower icons">Flower icons
-                                created by Vitaly
-                                Gorbachev - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/picture" title="picture icons">Picture icons
-                                created by SeyfDesigner
-                                - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/pill" title="pill icons">Pill icons created by
-                                Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://github.com/ChartsOrg/Charts" title="DG Chart">DG Charts</a></p>
-                        <p><a href="https://github.com/Infomaniak/swift-rich-html-editor?tab=readme-ov-file"
-                                title="InfomaniakRichHTMLEditor">InfomaniakRichHTMLEditor</a></p>
-                        <p><a href="https://gemini.google.com/app" title="Google Gemini">Google Gemini</a></p>
-                        <p><a href="https://www.llama.com" title="LLAMA by Meta">LLAMA by Meta</a></p>
-                        <p><a href="https://huggingface.co/mlc-ai" title="MLC AI">MLC AI</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/dog" title="dog icons">Dog icons created by
-                                Freepik - Flaticon</a>
-                        </p>
-                        <p><a href="https://www.flaticon.com/free-icons/pet-toy" title="pet toy icons">Pet toy icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by
-                                Freepik - Flaticon</a>
-                        </p>
-                        <p><a href="https://www.flaticon.com/free-icons/cat-toy" title="cat toy icons">Cat toy icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/rope-toy" title="rope toy icons">Rope toy icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/dog" title="dog icons">Dog icons created by
-                                Freepik - Flaticon</a>
-                        </p>
-                        <p><a href="https://www.flaticon.com/free-icons/hamster" title="hamster icons">Hamster icons
-                                created by Yellowline -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/dog-ball" title="dog ball icons">Dog ball icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/bone" title="bone icons">Bone icons created by
-                                Smashicons -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/data-analysis" title="data analysis icons">Data
-                                analysis icons
-                                created by maswan - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/journal" title="journal icons">Journal icons
-                                created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/artificial-intelligence"
-                                title="artificial intelligence icons">Artificial intelligence icons created by Freepik -
-                                Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/ferret" title="ferret icons">Ferret icons
-                                created by Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/budget" title="budget icons">Budget icons
-                                created by Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/expense" title="expense icons">Expense icons
-                                created by Sukma Aditia - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/toys" title="toys icons">Toys icons created by
-                                Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/medicare" title="medicare icons">Medicare icons
-                                created by Three musketeers - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/veterinary" title="veterinary icons">Veterinary
-                                icons created by paulalee - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/pet-food" title="pet food icons">Pet food icons
-                                created by Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/cat-carrier" title="cat carrier icons">Cat
-                                carrier icons created by Smashicons - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/grooming" title="grooming icons">Grooming icons
-                                created by Erifqi Zetiawan - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/dog-training" title="dog training icons">Dog
-                                training icons created by Flat Icons - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/budget" title="budget icons">Budget icons
-                                created by rukanicon - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/chinchilla" title="chinchilla icons">Chinchilla
-                                icons created by bsd - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/rat" title="rat icons">Rat icons created by
-                                Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/hedgehog" title="hedgehog icons">Hedgehog icons
-                                created by Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/frog" title="frog icons">Frog icons created by
-                                Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/cow" title="cow icons">Cow icons created by
-                                Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/crab" title="crab icons">Crab icons created by
-                                Freepik - Flaticon</a></p>
-                        <p><a href="https://www.flaticon.com/free-icons/butterfly" title="butterfly icons">Butterfly
-                                icons created by Freepik - Flaticon</a></p>
-                    </ul>
-                </div>
-                <div class="text-center mt-10">
-                    <a href="mypawpal-about.html"
-                        class="inline-block bg-cyan-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-cyan-600 transition-transform transform hover:scale-105">Back
-                        to Home</a>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!-- Footer -->
-    <footer class="text-center py-8">
-        <div class="container mx-auto text-slate-500">
-            <p>&copy; 2025 MyPawPal. All Rights Reserved. |
-                <a href="mypawpal-credits.html" class="hover:text-slate-800">Credits</a> |
-                <a href="mypawpal-privacy.html" class="hover:text-slate-800">Privacy</a> |
-                <a href="mypawpal-terms.html" class="hover:text-slate-800">Terms</a>
-            </p>
+        <!-- Background Gradient Shapes -->
+        <div class="background-shapes">
+                <div class="shape shape1"></div>
+                <div class="shape shape2"></div>
         </div>
-    </footer>
+
+        <div class="container mx-auto px-6 pt-32 pb-12 md:pt-40 md:pb-20">
+
+                <!-- Header -->
+                <header class="text-center mb-12">
+                        <h1 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight">
+                                Credits & Attributions
+                        </h1>
+                        <p class="text-lg text-slate-600 mt-2">MyPawPal is made possible by these amazing resources.</p>
+                </header>
+
+                <!-- Credits Content -->
+                <main>
+                        <div class="glass-card max-w-4xl mx-auto p-8 md:p-12">
+                                <div class="space-y-4 text-slate-700">
+                                        <p>The MyPawPal software includes the use of the following resources:</p>
+                                        <ul class="list-disc list-inside space-y-3">
+                                                <p><a href="https://www.flaticon.com/free-icons/notification"
+                                                                title="notification icons">Notification icons created
+                                                                by Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/pet-bottle"
+                                                                title="pet bottle icons">Pet bottle
+                                                                icons created by
+                                                                Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/view-list"
+                                                                title="view list icons">View list
+                                                                icons created by
+                                                                JessiGue - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/dog"
+                                                                title="dog icons">Dog icons created by
+                                                                Freepik - Flaticon</a>
+                                                </p>
+                                                <p><a href="https://www.flaticon.com/free-icons/cat"
+                                                                title="cat icons">Cat icons created by
+                                                                Freepik - Flaticon</a>
+                                                </p>
+                                                <p><a href="https://www.flaticon.com/free-icons/bird"
+                                                                title="bird icons">Bird icons created by
+                                                                Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/rabbit"
+                                                                title="rabbit icons">Rabbit icons
+                                                                created by dDara -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/hamster"
+                                                                title="hamster icons">Hamster icons
+                                                                created by justicon -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/cute"
+                                                                title="cute icons">Cute icons created by
+                                                                Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/cat"
+                                                                title="cat icons">Cat icons created by
+                                                                Freepik - Flaticon</a>
+                                                </p>
+                                                <p><a href="https://www.flaticon.com/free-icons/hamster"
+                                                                title="hamster icons">Hamster icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/weight"
+                                                                title="weight icons">Weight icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/glass-of-water"
+                                                                title="glass of water icons">Glass of water icons
+                                                                created by Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/activity"
+                                                                title="activity icons">Activity icons
+                                                                created by
+                                                                redempticon - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/pet-food"
+                                                                title="pet-food icons">Pet-food icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/settings"
+                                                                title="settings icons">Settings icons
+                                                                created by srip -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/calendar"
+                                                                title="calendar icons">Calendar icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/turtle"
+                                                                title="turtle icons">Turtle icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/ocean"
+                                                                title="ocean icons">Ocean icons created
+                                                                by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/diary"
+                                                                title="diary icons">Diary icons created
+                                                                by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/fauna"
+                                                                title="fauna icons">Fauna icons created
+                                                                by Paul J. -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/horse"
+                                                                title="horse icons">Horse icons created
+                                                                by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/guinea-pig"
+                                                                title="guinea pig icons">Guinea pig
+                                                                icons created by
+                                                                Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/cocaine"
+                                                                title="cocaine icons">Cocaine icons
+                                                                created by Good Ware -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/leaves"
+                                                                title="leaves icons">Leaves icons
+                                                                created by cahiwak -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/flower"
+                                                                title="flower icons">Flower icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/flower"
+                                                                title="flower icons">Flower icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/leaves"
+                                                                title="leaves icons">Leaves icons
+                                                                created by manshagraphics
+                                                                - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/leaf"
+                                                                title="leaf icons">Leaf icons created by
+                                                                Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/flower"
+                                                                title="flower icons">Flower icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/flower"
+                                                                title="flower icons">Flower icons
+                                                                created by jocularityart -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/flower"
+                                                                title="flower icons">Flower icons
+                                                                created by Vitaly
+                                                                Gorbachev - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/picture"
+                                                                title="picture icons">Picture icons
+                                                                created by SeyfDesigner
+                                                                - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/pill"
+                                                                title="pill icons">Pill icons created by
+                                                                Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://github.com/ChartsOrg/Charts" title="DG Chart">DG
+                                                                Charts</a></p>
+                                                <p><a href="https://github.com/Infomaniak/swift-rich-html-editor?tab=readme-ov-file"
+                                                                title="InfomaniakRichHTMLEditor">InfomaniakRichHTMLEditor</a>
+                                                </p>
+                                                <p><a href="https://gemini.google.com/app" title="Google Gemini">Google
+                                                                Gemini</a></p>
+                                                <p><a href="https://www.llama.com" title="LLAMA by Meta">LLAMA by
+                                                                Meta</a></p>
+                                                <p><a href="https://huggingface.co/mlc-ai" title="MLC AI">MLC AI</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/dog"
+                                                                title="dog icons">Dog icons created by
+                                                                Freepik - Flaticon</a>
+                                                </p>
+                                                <p><a href="https://www.flaticon.com/free-icons/pet-toy"
+                                                                title="pet toy icons">Pet toy icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/cat"
+                                                                title="cat icons">Cat icons created by
+                                                                Freepik - Flaticon</a>
+                                                </p>
+                                                <p><a href="https://www.flaticon.com/free-icons/cat-toy"
+                                                                title="cat toy icons">Cat toy icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/rope-toy"
+                                                                title="rope toy icons">Rope toy icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/dog"
+                                                                title="dog icons">Dog icons created by
+                                                                Freepik - Flaticon</a>
+                                                </p>
+                                                <p><a href="https://www.flaticon.com/free-icons/hamster"
+                                                                title="hamster icons">Hamster icons
+                                                                created by Yellowline -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/dog-ball"
+                                                                title="dog ball icons">Dog ball icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/bone"
+                                                                title="bone icons">Bone icons created by
+                                                                Smashicons -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/data-analysis"
+                                                                title="data analysis icons">Data
+                                                                analysis icons
+                                                                created by maswan - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/journal"
+                                                                title="journal icons">Journal icons
+                                                                created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/artificial-intelligence"
+                                                                title="artificial intelligence icons">Artificial
+                                                                intelligence icons created by Freepik -
+                                                                Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/ferret"
+                                                                title="ferret icons">Ferret icons
+                                                                created by Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/budget"
+                                                                title="budget icons">Budget icons
+                                                                created by Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/expense"
+                                                                title="expense icons">Expense icons
+                                                                created by Sukma Aditia - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/toys"
+                                                                title="toys icons">Toys icons created by
+                                                                Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/medicare"
+                                                                title="medicare icons">Medicare icons
+                                                                created by Three musketeers - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/veterinary"
+                                                                title="veterinary icons">Veterinary
+                                                                icons created by paulalee - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/pet-food"
+                                                                title="pet food icons">Pet food icons
+                                                                created by Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/cat-carrier"
+                                                                title="cat carrier icons">Cat
+                                                                carrier icons created by Smashicons - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/grooming"
+                                                                title="grooming icons">Grooming icons
+                                                                created by Erifqi Zetiawan - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/dog-training"
+                                                                title="dog training icons">Dog
+                                                                training icons created by Flat Icons - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/budget"
+                                                                title="budget icons">Budget icons
+                                                                created by rukanicon - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/chinchilla"
+                                                                title="chinchilla icons">Chinchilla
+                                                                icons created by bsd - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/rat"
+                                                                title="rat icons">Rat icons created by
+                                                                Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/hedgehog"
+                                                                title="hedgehog icons">Hedgehog icons
+                                                                created by Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/frog"
+                                                                title="frog icons">Frog icons created by
+                                                                Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/cow"
+                                                                title="cow icons">Cow icons created by
+                                                                Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/crab"
+                                                                title="crab icons">Crab icons created by
+                                                                Freepik - Flaticon</a></p>
+                                                <p><a href="https://www.flaticon.com/free-icons/butterfly"
+                                                                title="butterfly icons">Butterfly
+                                                                icons created by Freepik - Flaticon</a></p>
+                                        </ul>
+                                </div>
+                                <div class="text-center mt-10">
+                                        <a href="mypawpal-about.html"
+                                                class="inline-block bg-cyan-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-cyan-600 transition-transform transform hover:scale-105">Back
+                                                to Home</a>
+                                </div>
+                        </div>
+                </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center py-8">
+                <div class="container mx-auto text-slate-500">
+                        <p>&copy; 2025 MyPawPal. All Rights Reserved. |
+                                <a href="mypawpal-credits.html" class="hover:text-slate-800">Credits</a> |
+                                <a href="mypawpal-privacy.html" class="hover:text-slate-800">Privacy</a> |
+                                <a href="mypawpal-terms.html" class="hover:text-slate-800">Terms</a>
+                        </p>
+                </div>
+        </footer>
+
+        <script>
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+
+                mobileMenuButton.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                });
+        </script>
 
 </body>
 
